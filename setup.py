@@ -5,7 +5,6 @@ def get_requirements(file_path:str)->List[str]:
     '''
     This finction will return the list of requirements
     '''
-    requirements = []
     with open(file_path,'r') as file_obj:
         req = file_obj.readlines()
         req = [x.replace('\n','') for x in req]
